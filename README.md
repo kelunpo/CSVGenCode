@@ -1,26 +1,26 @@
 ### CSVGenCode
 Auto generate code from CSV config, user-defined the templete code
-###### 一.使用方式：
+###### 一。使用方式：
 ```
 　　　1.将CSV文件拷贝到 ./Config/Input 中 格式参考下面
 　　　2.双击CSVGenCode.sln 运行即可
 　　　3.在 Config/Output可以查看最终生成的代码
 ```
-###### 二.CSV格式
+###### 二。CSV格式
 ```
 　　　第一行为注释
 　　　第二行为生成的代码中的属性名字
 　　　第三行为生成的代码中的类型
 　　　剩下的4~$ 为内容
 ```
-###### 三.目录说明
+###### 三。目录说明
 ```
 　　　 Config/Templet 中所有文件作为模版文件
 　　　 Config/Input 中所有的csv文件作为输入
 　　　 Config/Output 为生成的代码
 　　　 Config/KeywordMapRule.txt 作为配置生成的代码的调整配置 具体使用可以查看该文 件内容
-```　 
-###### 四.修改模版
+```
+###### 四。修改模版
 如果生成的代码不合心意　可以修改./Config/Templet中的文件
 1. 其中可以使用的关键字如下
 * #FileName         	//文件名字            
@@ -57,8 +57,13 @@ struct #StructName
 };
 #End_Replace_Tag_Class
 ```
-![csv 图片](https://github.com/JiepengTan/CSVGenCode/tree/master/Screenshots/5.png)
-
+![csv 图片](./Screenshots/5.jpg)
+![][foryou]
+![][1.jpg]
+![][2.jpg]
+![][3.jpg]
+![][4.jpg]
+![][5.jpg]
 最终生成的代码为
 ```cpp
 struct SHeroQualityUpTest
@@ -91,4 +96,12 @@ struct SVipLevelTest
 其他的例子可以打开参考
 CSVGenCode.sln
 ```
+
+--------------------------------
+[foryou]:https://github.com/guodongxiaren/ImageCache/tree/master/Logo/foryou.gif
+[1.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/1.png
+[2.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/2.png
+[3.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/3.png
+[4.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/4.png
+[5.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/5.png
  
