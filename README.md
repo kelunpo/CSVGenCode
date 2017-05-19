@@ -22,28 +22,30 @@ Auto generate code from CSV config, user-defined the templete code
 ```
 ###### 四。修改模版
 如果生成的代码不合心意　可以修改./Config/Templet中的文件
-1. 其中可以使用的关键字如下
-* #FileName         	//文件名字            
-* #KeyTypeName      	//CSV主键类型           
-* #KeyName          	//CSV主键名字
-* #StructName       	//结构体名字
-* #ClsName          	//类名
-* #AttriName        	//CSV中属性的名字         
-* #AttriTypeName            //CSV中属性的类型
-* #AttriCommment            //CSV中属性的注释   
-* #AttriType2FuncName       //CSV中属性到方法的映射 参考Type2FuncNameMap
+#######1. 其中可以使用的关键字如下
 ```
-这些宏可以替换成最终的CSV中的内容
-1. 类 宏标志(一个文件模版中可以有多个)
-#Begin_Replace_Tag_Class
-#End_Replace_Tag_Class
-在这个范围内的所有代码都将作为模版
-将遍历所有的CSV,并将每一个CSV作为一个单位进行替换
-2. 属性 宏标志(一个类宏中可以有多个)
-#Begin_Replace_Tag_Attri
-#End_Replace_Tag_Attri
-在这个范围内的所有代码都将作为模版
-将遍历单个CSV的所有列,并将每一列作为一个单位进行替换
+#FileName         	//文件名字            
+#KeyTypeName      	//CSV主键类型           
+#KeyName          	//CSV主键名字
+#StructName       	//结构体名字
+#ClsName          	//类名
+#AttriName        	//CSV中属性的名字         
+#AttriTypeName            //CSV中属性的类型
+#AttriCommment            //CSV中属性的注释   
+#AttriType2FuncName       //CSV中属性到方法的映射 参考Type2FuncNameMap
+```
+```cpp
+//这些宏可以替换成最终的CSV中的内容
+//1. 类 宏标志(一个文件模版中可以有多个)
+//#Begin_Replace_Tag_Class
+//#End_Replace_Tag_Class
+//在这个范围内的所有代码都将作为模版
+//将遍历所有的CSV,并将每一个CSV作为一个单位进行替换
+//2. 属性 宏标志(一个类宏中可以有多个)
+//#Begin_Replace_Tag_Attri
+//#End_Replace_Tag_Attri
+//在这个范围内的所有代码都将作为模版
+//将遍历单个CSV的所有列,并将每一列作为一个单位进行替换
 ```
 如:
 ```cpp
@@ -58,12 +60,6 @@ struct #StructName
 #End_Replace_Tag_Class
 ```
 ![csv 图片](./Screenshots/5.jpg)
-![][foryou]
-![][1.jpg]
-![][2.jpg]
-![][3.jpg]
-![][4.jpg]
-![][5.jpg]
 最终生成的代码为
 ```cpp
 struct SHeroQualityUpTest
@@ -92,16 +88,9 @@ struct SVipLevelTest
 	int		purchase_energy_count;
 };
 ```
-```
+
 其他的例子可以打开参考
 CSVGenCode.sln
-```
 
---------------------------------
-[foryou]:https://github.com/guodongxiaren/ImageCache/tree/master/Logo/foryou.gif
-[1.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/1.png
-[2.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/2.png
-[3.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/3.png
-[4.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/4.png
-[5.png]:https://github.com/JiepengTan/CSVGenCode/blob/master/Screenshots/5.png
+
  
