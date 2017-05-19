@@ -34,7 +34,6 @@ Auto generate code from CSV config, user-defined the templete code
 #AttriCommment            //CSV中属性的注释   
 #AttriType2FuncName       //CSV中属性到方法的映射 参考Type2FuncNameMap
 ```
-
 ###### 这些宏可以替换成最终的CSV中的内容
 ```
 1. 类 宏标志(一个文件模版中可以有多个)
@@ -47,7 +46,6 @@ Auto generate code from CSV config, user-defined the templete code
     #End_Replace_Tag_Attri
     在这个范围内的所有代码都将作为模版
     将遍历单个CSV的所有列,并将每一列作为一个单位进行替换
-```
 ```
 如:
 ```cpp
