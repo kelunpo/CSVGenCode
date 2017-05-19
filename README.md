@@ -59,7 +59,7 @@ struct #StructName
 };
 #End_Replace_Tag_Class
 ```
-![csv 图片](./Screenshots/5.jpg)
+![csv 图片](./Screenshots/1.jpg)
 最终生成的代码为
 ```cpp
 struct SHeroQualityUpTest
