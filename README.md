@@ -56,11 +56,11 @@ Auto generate code from CSV config, user-defined the templete code
 9.#End_Replace_Tag_Class
 配上CSV文件
 hero_quality_up_test.csv
-
+![Alt text](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
 
 和
 vip_level_test.csv
- 
+![Alt text](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
  
 最终生成的代码为
 1.
