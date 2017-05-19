@@ -1,7 +1,7 @@
 ### CSVGenCode
 Auto generate code from CSV config, user-defined the templete code
-```
 ###### 一.使用方式：
+```　
 　　　1.将CSV文件拷贝到 ./Config/Input 中 格式参考下面
 　　　2.双击CSVGenCode.sln 运行即可
 　　　3.在 Config/Output可以查看最终生成的代码
@@ -59,14 +59,8 @@ struct #StructName
 };
 #End_Replace_Tag_Class
 ```
-配上CSV文件
-hero_quality_up_test.csv
-![csv 图片](https://github.com/JiepengTan/CSVGenCode/tree/master/Screenshots/1.png)
+![csv 图片](https://github.com/JiepengTan/CSVGenCode/tree/master/Screenshots/5.jpg)
 
-和
-vip_level_test.csv
-![csv 图片](https://github.com/JiepengTan/CSVGenCode/tree/master/Screenshots/1.png)
- 
 最终生成的代码为
 ```cpp
 struct SHeroQualityUpTest
