@@ -694,10 +694,10 @@ public class EditorCSVToCpp {
 #else
 
 class Program {
-    static string TempletPath = Path.Combine(Environment.CurrentDirectory, "../../CSVToCpp/Templet");
-    static string InputDir = Path.Combine(Environment.CurrentDirectory, "../../CSVToCpp/Input");
-    static string OutputDir = Path.Combine(Environment.CurrentDirectory, "../../CSVToCpp/Output");
-    static string ConfigFile = Path.Combine(Environment.CurrentDirectory, "../../CSVToCpp/KeywordMapRule.txt");
+    static string TempletPath = Path.Combine(Environment.CurrentDirectory, "../../../Config/Templet");
+    static string InputDir = Path.Combine(Environment.CurrentDirectory, "../../../Config/Input");
+    static string OutputDir = Path.Combine(Environment.CurrentDirectory, "../../../Config/Output");
+    static string ConfigFile = Path.Combine(Environment.CurrentDirectory, "../../../Config/KeywordMapRule.txt");
 
     static void Main(string[] args) {
         CSVGenCode.Debug.Log(TempletPath);
