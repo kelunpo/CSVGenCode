@@ -1,0 +1,36 @@
+#     #FileName         		//文件名字            
+#     #KeyTypeName      		//CSV主键类型           
+#     #KeyName          		//CSV主键名字
+#     #StructName       		//结构体名字
+#     #ClsName          		//类名
+#     #AttriName        		//CSV中属性的名字         
+#     #AttriTypeName            //CSV中属性的类型 
+#     #AttriCommment            //CSV中属性的注释   
+#     #AttriType2FuncName       //CSV中属性到方法的映射 参考Type2FuncNameMap
+#
+#CSV文件中填写的类型到生成的代码中的类型的映射
+Type2FuncNameMap = 
+	double:ReadDouble;
+	float:ReadFloat;
+	int:ReadInt32;
+	int64:ReadInt64;
+	uint32:ReadUInt32;
+	uint64:ReadUInt64;
+	string:ReadString;
+$$
+#CSV文件中填写的类型到生成的代码中的类型的映射
+Type2CodeTypeMap =
+	double:double;
+	float:float;
+	int:int;
+	int64:int64;
+	uint32:uint32;
+	uint64:uint64;
+	string:string;
+$$
+#结构体前缀
+StructNamePrefix = S
+$$
+#类名字前缀
+ClassNamePrefix = C
+$$
